@@ -125,7 +125,7 @@ ul>li {
     color: rgb(94, 91, 91);
 }
 
-.writing>.btn-primary {
+a>.btn-primary {
     margin-left: 5%;
     margin-top: 2%;
     background: #6C63FF;
@@ -310,7 +310,7 @@ ul>li {
 
 /* MENU STARTS */
 .wholemenu{
-    display: none;
+    display: flex;
 }
 .menu {
     margin-top: 250px;

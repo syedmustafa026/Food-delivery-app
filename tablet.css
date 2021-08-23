@@ -3,7 +3,7 @@
     body {
         font-family: font;
         color: rgba(25, 51, 25, 0.966);
-        background-image: linear-gradient(rgb(248, 255, 252), rgb(248, 244, 244));
+        background-image: linear-gradient(#f1f1fd, #ffffff);
     }
     
     .container {

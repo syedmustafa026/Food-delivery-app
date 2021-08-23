@@ -24,14 +24,14 @@ let  submit = async () => {
     })
     
     firebase.database().ref('Product').on('child_added', data => {
-pkey =console.log(data.key)
-pkey
+console.log(data.key)
+
 `
-<div class="card" style="width: 20rem;">
-<img src="" class="card-img-top" alt="...">
+<div  class="card" style="width: 20rem;">
+<img id="${data.key}" src="" class="card-img-top" alt="...">
 <div class="card-body">
-    <h5 class="card-title">${data.key}</h5>
-    <p class="card-text">${data.key}</p>
+    <h5 id="${data.key}" class="card-title">${data.val()}</h5>
+    <p id="${data.key}" class="card-text">${data.key}</p>
     <div class="butns">
         <a onclick="dlt('${data.key}')"  class="btn btn-primary"></i>Delete</a>
         <a onclick="acpt('${data.key}')" class="btn btn-primary"></i>Accept</a>

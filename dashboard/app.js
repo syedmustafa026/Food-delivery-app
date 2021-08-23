@@ -24,7 +24,8 @@ let  submit = async () => {
     })
     
     firebase.database().ref('Product').on('child_added', data => {
-
+pkey =console.log(data.key)
+pkey
 `
 <div class="card" style="width: 20rem;">
 <img src="" class="card-img-top" alt="...">

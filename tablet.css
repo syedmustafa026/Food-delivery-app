@@ -1,0 +1,532 @@
+
+@media only screen and (max-width:1024px){
+    body {
+        font-family: font;
+        color: rgba(25, 51, 25, 0.966);
+        background-image: linear-gradient(rgb(248, 255, 252), rgb(248, 244, 244));
+    }
+    
+    .container {
+        position: relative !important;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    
+    /* HEADER STARTS */
+    .logo> img{
+        width: 190px;
+        height: 120px;
+    }
+    .nvbars{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+     
+    }
+    .navbar> .navbar-toggler{
+        position: absolute;
+        top: 40%;
+        right: 0%;
+    }
+    .navbarz {
+        display: none;
+        margin: 05px -10px;
+    }
+    
+    ul>li {
+        display: inline;
+        padding: 18px;
+    }
+    
+    .navbar>ul>li>a {
+        display: inline-flex;
+        text-decoration: none;
+        color: rgba(25, 51, 25, 0.966);
+    }
+    
+    .nvbars:hover {
+        color: rgb(231, 202, 72);
+        font-weight: bold;
+    }
+    .waved {
+       display: none;
+    }
+    
+    /* HEADER ENDS  */
+    
+    /* FRONT STARTS */
+    
+    .main {
+        margin-top: 10%;
+        margin-left: 07%;
+        
+    }
+    
+    .writing>.heading {
+        font-family: font1;
+        word-spacing: 10px;
+        line-height: 65px;
+        font-size: 60px;
+        text-align: justify;
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+    
+    .writing>.para {
+        margin: 15px 0px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(94, 91, 91);
+    }
+    
+    .input {
+        display: inline-flex;
+        margin-top: 01%;
+        margin-left: 07%;
+    }
+    
+    .address>input {
+        padding: 20px;
+        border: none;
+        outline: none;
+        width: 350px;
+        height: 50px;
+    }
+    
+    .address {
+        box-shadow: 2px 2px 1px rgb(231, 227, 227);
+        width: 80%;
+        border-radius: 5px;
+    }
+    
+    .button {
+        margin-left: 10px;
+        width: 150px;
+        border: none;
+        background-color: rgba(123, 161, 65, 0.952);
+        color: white;
+        box-shadow: 2px 2px 0.5px rgb(182, 177, 177);
+        border-radius: 10px;
+    }
+    .image2{
+        display: none;
+    }
+    .image1 {
+        position: absolute;
+        top: 7.5%;
+        right: 78%;
+        width:100px !important;
+        height: 100px !important;
+    }
+    
+    /* FRONT ENDS  */
+    
+    /* WELCOME STARTS  */
+    
+    .welcome {
+        margin-left: 0%;
+        margin-top: 550px;
+        display: inline-flex;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .chef>img {
+        margin-left: 80px;
+        border-radius: 4px;
+        height: 450px !important;
+        width: 480px !important;
+    }
+    
+    .welcome>.wel-para {
+        margin-left: 10px;
+    }
+    
+    .wel-para>h4 {
+        color: rgb(255, 210, 10);
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    
+    .wel-para>h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 5%;
+    }
+    
+    .wel-para>p {
+        font-weight: 700;
+        color: rgba(82, 80, 80, 0.828);
+        text-align: justify;
+    }
+    
+    .wel-para>button {
+        width: 190px;
+        color: white;
+        height: 58px;
+        border: none;
+        outline: none;
+        background-color: rgba(123, 161, 65, 0.952);
+        box-shadow: 2px 2px 0.5px rgb(182, 177, 177);
+        border-radius: 4px;
+    }
+    
+    /* WELCOME ENDS  */
+    
+    /* REASON STARTS */
+    
+    .reason {
+        line-height: 60px;
+        margin-top: 250px;
+        text-align: center;
+    }
+    
+    .reason>h4 {
+        color: rgb(255, 210, 10);
+    }
+    
+    .cards {
+        display: flex;
+        margin-left: 7%;
+    }
+    
+    .card1 {
+        margin-left: 2%;
+        margin-top: 6%;
+        background-color: rgb(240, 243, 236);
+        width: 360px;
+        height: 350px;
+        padding: 30px 10px;
+        text-align: center;
+        border-radius: 8px;
+    }
+    
+    .card1>img {
+        margin: 10px;
+    }
+    
+    .card1>h5 {
+        margin: 10px;
+        font-weight: bold;
+    }
+    
+    .card1>p {
+        font-weight: 500;
+        color: rgb(124, 124, 124);
+        text-align: center;
+        line-height: 32px;
+    }
+    
+    .card2 {
+        margin-left: 2%;
+        margin-top: 6%;
+        background-color: rgb(255, 255, 255);
+        width: 360px;
+        height: 350px;
+        padding: 30px 10px;
+        text-align: center;
+        border-radius: 8px;
+        border-bottom: 7px solid rgba(123, 161, 65, 0.952);
+        box-shadow: 2px 2px 9px rgb(231, 225, 225);
+    }
+    
+    .card2>img {
+        margin: 10px;
+    }
+    
+    .card2>h5 {
+        margin: 10px;
+        font-weight: bold;
+    }
+    
+    .card2>p {
+        font-weight: 500;
+        color: rgb(124, 124, 124);
+        text-align: center;
+        line-height: 32px;
+    }
+    
+    /* REASON ENDS */
+    
+    /* MENU STARTS */
+    
+    .menu {
+       
+        margin-top: 250px;
+        text-align: center;
+        line-height: 55px;
+    }
+    
+    .menu>h4 {
+        color: rgb(255, 210, 10);
+    }
+    
+    .menu>h2 {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: font1;
+    }
+    
+    .menucards {
+        margin-left: 6%;
+        display: flex;
+        margin-top: 6%;
+    }
+    
+    .menucard1>.ul>.bf {
+        display: block;
+        border: 2px solid;
+        border-color: transparent transparent transparent rgb(182, 180, 169);
+        width: 180px;
+        height: 50px;
+        border-radius: 5px;
+        padding-bottom: 40px;
+    }
+    
+    .bff {
+        cursor: pointer;
+        width: 180px;
+        height: 50px;
+        background-color: rgb(245, 243, 243);
+        display: block;
+        border: 4px solid;
+        border-radius: 5px;
+        padding-bottom: 40px;
+        box-shadow: 2px 2px 6px rgb(211, 207, 207);
+        border-color: transparent transparent transparent rgb(255, 210, 10);
+    }
+    
+    .bf, .bff {
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .menucard2 {
+       margin-top: 5%;
+        margin-left: 2%;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 2px 2px 5px rgb(201, 198, 198);
+        text-align: center;
+        width: 270px;
+        background-color: #ffff;
+        height: 280px;
+    }
+    
+    .menu1 {
+        margin-left: 8%;
+    }
+    
+    .food1>img {
+        border-radius: 100px;
+        margin-left: -50px;
+    }
+    
+    .menucard3>img {
+        border-radius: 100px;
+        margin-left: -0px;
+        margin-top: 20px;
+    }
+    
+    .menucard2>h5 {
+        font-weight: bold;
+        font-size: 22px;
+    }
+    
+    .menucard2>h6 {
+        color: green;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .menucard2>h6>del {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    .menucard2:hover {
+        background-color: rgba(7, 7, 7, 0.945);
+        color: white;
+        box-shadow: 5px 5px 18px gray;
+        cursor: pointer;
+    }
+    
+    /* MENU ENDS */
+    
+    /* HISTORY STARTS */
+    
+    .history {
+        margin-left: 07%;
+        margin-top: 250px;
+        display: inline-flex;
+        height: 500px;
+    }
+    
+    .his-para>p {
+        font-weight: 700;
+        color: rgba(82, 80, 80, 0.828);
+        text-align: justify;
+        margin-bottom: 7%;
+    }
+    
+    .his-para>h4 {
+        color: rgb(255, 210, 10);
+        margin-bottom: 7%;
+    }
+    
+    .history>.his-para {
+        margin-left: 40px;
+        margin-bottom: 0%;
+    }
+    
+    .his-para>h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 7%;
+    }
+    
+    .his-para>button {
+        width: 190px;
+        color: white;
+        height: 58px;
+        border: none;
+        outline: none;
+        background-color: rgba(123, 161, 65, 0.952);
+        box-shadow: 2px 2px 0.5px rgb(182, 177, 177);
+        border-radius: 4px;
+    }
+    
+    .burger>img {
+        margin-top: 50px;
+        margin-left: 150px;
+        border-radius: 4px;
+        box-shadow: 0.5px 0.5px 2px rgb(224, 218, 218);
+        height: 300px !important;
+        width: 400px !important;
+    }
+    
+    /* HISTORY ENDS */
+    
+    /* NEWS START  */
+    
+    .newsh {
+        text-align: center;
+        
+    }
+    
+    .newsh>h4 {
+        color: rgb(255, 210, 10);
+    }
+    
+    .newsh>h2 {
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 4%;
+    }
+    
+    .news {
+        display: inline-flex;
+        margin-left: 8%;
+    }
+    
+    .news>.news1 {
+        margin: 2% 20px;
+        width: 340px !important;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .news1>img {
+        border-radius: 20px;
+    }
+    
+    .card-body>h4 {
+        font-weight: bold;
+    }
+    
+    .card-body>a {
+        text-decoration: none;
+        color: rgb(241, 200, 16);
+        font-weight: bold;
+    }
+    
+    .card-body>p {
+        font-weight: 700;
+        color: rgba(82, 80, 80, 0.828);
+        text-align: justify;
+        margin-bottom: 7%;
+    }
+    
+    /* NEWS ENDS  */
+    
+    /* subscriptions start  */
+    
+    .sub>h3 {
+        text-align: center;
+        color: rgb(241, 200, 16);
+        font-weight: bold;
+    }
+    
+    .sub {
+        margin-top: 200px;
+    }
+    
+    .sub>h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 1000;
+        margin-bottom: 05%;
+    }
+    
+    .submit {
+        margin: 0px auto;
+        border-radius: 80px;
+        background-color: white;
+        border: none;
+        width: 35%;
+        height: 45px;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .submit>input {
+        border: none;
+        outline: none;
+        width: 70%;
+    }
+    
+    .submit>button {
+        background-color: rgba(123, 161, 65, 0.952);
+        border: none;
+        border-radius: 100px;
+        width: 10%;
+        height: 35px;
+        position: absolute;
+        right: 4%;
+        top: 14%;
+    }
+    
+    .submit>button>i {
+        color: white;
+    }
+    /* subscriptions ends  */
+    /* footer starts  */
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 200px;
+        background-image: linear-gradient(rgb(248, 244, 244),rgba(248, 250, 250, 0.808));
+    }
+    .head>h1{
+        font-weight: bold;
+    }
+    .unorder>li{
+        display: block;
+        font-weight: 600;
+    }
+    
+    /* footer ends  */
+}
+    

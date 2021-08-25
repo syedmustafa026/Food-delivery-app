@@ -8,7 +8,7 @@ price = document.getElementById("price");
 pic = document.getElementById("profile");
 loader = document.getElementById("loader")
 function myFunction(){
-    swal("Welcome to User Portal")
+    swal("Welcome to Admin Portal")
 }
 
 function logout() {
@@ -18,3 +18,4 @@ function logout() {
             window.location = "../../formpage/public/loginadmin.html"
         })
 }
+

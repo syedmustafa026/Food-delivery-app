@@ -7,37 +7,60 @@ food = document.getElementById("food");
 price = document.getElementById("price");
 pic = document.getElementById("profile");
 loader = document.getElementById("loader")
-function myFunction(){
+cards = document.getElementById("allcards")
+function myFunction() {
     swal("Welcome to User Portal")
 }
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        var uid = user.uid;
+        firebase.database().ref(`users/${uid}`).on('value', (data) => {
+            console.log(data.val())
+            username.innerHTML = data.val().username
+            email.innerHTML = data.val().email
+            city.innerHTML = data.val().city
+        })
 
-let  submit = async () => {
+    }
+    else {
+        window.location = "../formpage/public/loginuser.html"
+    }
+});
+let submit = async () => {
 
     swal("Wait a While")
-   let image = await  upload(pic.files[0])
-    firebase.database().ref('Product').push({
+    let image = await upload(pic.files[0])
+    firebase.database().ref('product').push({
         restaurant: restaurant.value,
         category: category.value,
         food: food.value,
         price: price.value,
         profile: image
     })
-    
     firebase.database().ref('Product').on('child_added', data => {
-console.log(data.key)
-
-`
-<div  class="card" style="width: 20rem;">
-<img id="${data.key}" src="" class="card-img-top" alt="...">
-<div class="card-body">
-    <h5 id="${data.key}" class="card-title">${data.val()}</h5>
-    <p id="${data.key}" class="card-text">${data.key}</p>
-    <div class="butns">
-        <a onclick="dlt('${data.key}')"  class="btn btn-primary"></i>Delete</a>
-        <a onclick="acpt('${data.key}')" class="btn btn-primary"></i>Accept</a>
-    </div>
-</div>
-</div> `
+        restr = document.getElementById("restraunt")
+        restr.innerHTML = data.val().restaurant
+    })
+    firebase.database().ref('Product').on('child_added', data => {
+        console.log(data.val().restaurant)
+        console.log(data.val().image)
+        console.log(data.val().category)
+        console.log(data.val().food)
+        cards.innerHTML += `
+            
+            <div class="card" style="width: 20rem;">
+                <img src="${data.val().image}" class="card-img-top" alt="...">
+                <div class="card-body"><span class="card-text">RS:${data.val().price}</span>
+                    <h3 class="card-title">${data.val().food}</h3>
+                    <p class="card-text">${data.val().category} </p>    
+                    <div class="butns">
+                    <a onclick="edit('${data.val().key}')" class="btn btn-primary"></i>Edit</a>
+                        <a onclick="dlt('${data.val().key}')"  class="btn btn-primary"></i>Delete</a>
+                    </div>
+                </div>
+            </div>
+            
+         `
     })
 }
 let upload = async (file) => {
@@ -59,7 +82,12 @@ let upload = async (file) => {
                     case firebase.storage.TaskState.RUNNING:
                         console.log('Upload is running');
                         break;
+
                 }
+                if (bar.innerHTML === "100%") {
+                    swal("Successfully", " Item Added", "success");
+                }
+
             },
             (error) => {
                 reject(error)
@@ -75,21 +103,7 @@ let upload = async (file) => {
 
 
 
-firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-        var uid = user.uid;
-        firebase.database().ref(`users/${uid}`).on('value', (data) => {
-            console.log(data.val())
-            username.innerHTML = data.val().username
-            email.innerHTML = data.val().email
-            city.innerHTML = data.val().city
 
-        })
-    }
-    else{
-        window.location = "../formpage/public/loginuser.html"
-    }
-});
 function logout() {
     firebase.auth().signOut()
         .then(() => {

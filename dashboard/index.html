@@ -30,32 +30,34 @@
         <button type="button" id="logout" onclick="logout()" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
             LOGOUT
         </button>
-        <h1 style=" margin-bottom: 5%; text-decoration: underline; color: white;">DASHBOARD</h1>
+        <h1 style=" text-align: center; margin-bottom: 5%; text-decoration: underline; color: white;">DASHBOARD</h1>
         <div class="box col-md-8 content" style="margin-left:30px">
             <div class="panel panel-default">
-                <div class="panel-heading" style="background-color:#e7d1f0">
+                <div class="panel-heading" style="background-color:#ccc9f5">
                     <h1 style="text-align: center;">Welcome </h1>
                 </div>
                 <div class="panel-body">
-                    <h3 >Name:&nbsp;<span id="name"></span></h3>
+                    <h2>Restaurant:&nbsp; <span id="restraunt"></span> </h2>
+                    <h3 >UserName:&nbsp;<span id="name"></span></h3>
                     <h3 >Email:&nbsp; <span id="email"></span> </h3>
                     <h3>City:&nbsp; <span id="city"></span> </h3>
+
                 </div>
             </div>
         </div>
 <h1 class="order"> PENDING ORDERS:</h1>
-<div class="img">
-    <img width="700px" src="../images/pnf.jpg" alt="">
+<!-- <div class="img"> -->
+    <!-- <img src="../images/pnf.jpg" alt=""> -->
 </div>
 <div id="allcards" class="allcard">
     <!-- <div class="card" style="width: 20rem;">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${}</h5>
-            <p class="card-text">${}</p>
+        <img src="/images/food1.png" class="card-img-top" alt="...">
+        <div class="card-body"><span class="card-text">RS:${price}</span>
+            <h3 class="card-title">${FOOD}</h3>
+            <p class="card-text">${Category} </p>    
             <div class="butns">
-                <a onclick="dlt()"  class="btn btn-primary"></i>Delete</a>
-                <a onclick="acpt()" class="btn btn-primary"></i>Accept</a>
+                <a onclick="dlt('${data.val().key}')"  class="btn btn-primary"></i>Delete</a>
+                <a onclick="edit('${data.val().key}')" class="btn btn-primary"></i>Edit</a>
             </div>
         </div>
     </div> -->
@@ -83,7 +85,7 @@
                     <h2>Restaurant DashBoard</h2>
                     <div class="input_area">
                         <p>Restaurant Name:</p>
-                        <input type="text" id="restname"
+                        <input type="text" id="restname" 
                             placeholder="Enter Your Restaurant Name Here"><br />
                             <p>Food Name:</p>
                             <input type="text" id="food"

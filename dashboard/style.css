@@ -64,24 +64,34 @@ input, button {
     width: 180px;
     height: 60px;
     border-radius: 30px;
-    bottom: 12%;
+    top: 12%;
     right: 5%;
-    background-color: #bf9dcc;
-    color: rgb(0, 0, 0);
+    background-color: #685EFA;
+    color: rgb(255, 255, 255);
     border: none;
+}
+.btn-success:hover{
+    background-color: #ccc9f5;
+    box-shadow: 4px 4px 4px #ccc9f5;
+    color: rgb(0, 0, 0);
+}
+#logout:hover{
+    background-color: #ccc9f5;
+    color: rgb(0, 0, 0);
+    box-shadow: 4px 4px 4px #ccc9f5;
 }
 #loader{
     margin: 100px 500px;
 }
 #logout {
     position: absolute;
-    bottom: 01%;
+    top: 01%;
     right: 5%;
     width: 180px;
     height: 60px;
     border-radius: 30px;
-    background-color: #bf9dcc;
-    color: rgb(0, 0, 0);
+    background-color: #685EFA;
+    color: rgb(255, 255, 255);
 }
 
 input {
@@ -111,7 +121,10 @@ input:focus {
     display: flex;
     justify-content: space-evenly;
 }
-
+.butns>.btn:hover{
+    background-color: #ccc9f5;
+    color: black;
+}
 .order {
     border-radius: 50px;
     width: 300px;
@@ -121,29 +134,34 @@ input:focus {
     margin-top: 2%;
     margin-left: 2%;
     border: solid 2px gray;
-    background-color: #851caf;
+    background-color: #685EFA;
     color: white;
 }
 
 h2, p {
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+    margin: 10px 0%;
 }
 
 button {
-    background-color: #851caf;
+    background-color: #685EFA;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    border: 1px solid #851caf;
+    border: 1px solid #685EFA;
     margin-top: 5%;
 }
 
 input:focus {
     border-style: solid;
     border-radius: 1px;
-    border-color: #851caf;
+    border-color: #685EFA;
 }
 
 .btn-primary {
-    background-color: #851caf;
+    background-color: #685EFA;
     border: none;
+}
+.img>img{
+    width: 700px;
+    height: 400px;
 }

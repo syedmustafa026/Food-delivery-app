@@ -5,15 +5,12 @@ var email = document.getElementById('email');
 password = document.getElementById('password');
 username = document.getElementById('username');
 checkEmail = document.getElementById("checkEmail");
-username = document.getElementById('username')
 checkPassword = document.getElementById("checkPassword");
 loader = document.getElementById("loader")
 eye = document.getElementById("eye")
 city = document.getElementById("city")
 phone = document.getElementById("phone")
 restr = document.getElementById("restr")
-city = document.getElementById("city")
-phone = document.getElementById("phone")
 
 // input feildWork
 function focusInput() {
@@ -71,6 +68,7 @@ function signup(e) {
                         loader.style.display = "inline-block"
                         localStorage.setItem("UserID", res.user.uid)
                         localStorage.setItem("name", email.value);
+                        localStorage.setItem("username", username.value);
                         localStorage.setItem("password", password.value);
                         swal("Well!", "Your account has been created!", "success");
                         setTimeout(function () {

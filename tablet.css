@@ -5,13 +5,11 @@
         color: rgba(25, 51, 25, 0.966);
         background-image: linear-gradient(#f1f1fd, #ffffff);
     }
-    
     .container {
         position: relative !important;
         margin-left: 5%;
         margin-right: 5%;
     }
-    
     
     /* HEADER STARTS */
     .logo> img{
